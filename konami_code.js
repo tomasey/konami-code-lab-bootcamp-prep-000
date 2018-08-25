@@ -11,9 +11,6 @@ const codes = [
   "a"
 ];
 
-//
-
-document.body.addEventListener('keydown', init(e));
 
 //
 
@@ -21,8 +18,12 @@ var index = 0;
 
 //
 
-function init(e) {
-var key = e.key;
+function init() {
+  document.body.addEventListener('keydown', kbdHandler(event));
+}
+
+function kbdHandler(e) {
+  var key = e.key;
   if (key === codes[index]) {
     index ++;
   }
