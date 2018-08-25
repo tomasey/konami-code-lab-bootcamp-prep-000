@@ -11,7 +11,6 @@ const codes = [
   "a"
 ];
 
-
 var index = 0;
 
 function init() {
