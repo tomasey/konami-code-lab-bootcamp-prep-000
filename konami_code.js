@@ -19,7 +19,7 @@ var index = 0;
 //
 
 function init() {
-  document.body.addEventListener('keydown', kbdHandler(event));
+  document.body.addEventListener('keydown', kbdHandler(e));
 }
 
 function kbdHandler(e) {
